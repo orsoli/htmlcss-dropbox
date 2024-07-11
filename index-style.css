@@ -6,7 +6,13 @@
 }
 
 :root{
-
+    /* colors  */
+    --primary-bg: #B4D0E6;
+    --secondary-bg :white;
+    --txt-color: black;
+    --berder-color: #D0D0D3;
+    --btn-blue-bg: #0861FF;
+    --footer-bg: black;
 }
 
 /* Generics  */
@@ -15,3 +21,10 @@ body{
 }
 
 /* Utils  */
+.container-sm{
+
+}
+
+.container-big{
+    
+}
