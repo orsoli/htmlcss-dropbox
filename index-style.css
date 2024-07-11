@@ -14,6 +14,9 @@
     --btn-blue-bg: #0861FF;
     --footer-bg: black;
 
+    /* gap  */
+    --gap-md: 30px;
+
     /* delet  */
     --height: 500px;
 
@@ -23,9 +26,10 @@
 .header-h{
     height: 100px;
 }
-
-section *{
+    
+section img{
     background-color: aquamarine;
+
 }
 
 .jumbo h1{
@@ -47,6 +51,14 @@ section *{
     padding-top: 20px;
 }
 
+.faturate{
+    height: 50px;
+}
+
+.card{
+    height: 400px;
+}
+
 
 
 
@@ -64,6 +76,7 @@ header{
 
 section{
     background-color: var(--secondary-bg);
+    /* padding: 20px 0; */
 }
 
 nav{
@@ -84,13 +97,17 @@ ul{
 
 /* Utils  */
 .container-sm{
-    width: 900px;
+    width: 700px;
     margin: auto;
 }
 
 .container-big{
-    width: 600px;
+    width: 900px;
     margin: auto;
+}
+
+.flex{
+    display: flex;
 }
 
 .border{
@@ -105,7 +122,6 @@ ul{
 }
 
 .header-list{
-    display: flex;
     justify-content: space-between;
     flex-grow: 1;
 }
@@ -129,6 +145,32 @@ ul{
 }
 
 .jumbo h1{
-    text-align: center;
     padding: 50px 0;
+}
+
+/* payments section  */
+.payments{
+    clear: right;
+}
+
+.payments h1{
+    padding: 20px 0;
+}
+
+.row{
+    flex-basis: 100%;
+    flex-wrap: wrap ;
+    gap: var(--gap-md);
+}
+
+.col{
+    flex-basis: calc(100%/3 - 60px/3);
+}
+
+.utenti{
+    justify-content: center;
+    border-bottom: 1px solid black
+}
+.card{
+    width: 100%;
 }
