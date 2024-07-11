@@ -15,16 +15,65 @@
     --footer-bg: black;
 }
 
+/* delete */
+.height{
+    height: 400px;
+}
+
+.header-h{
+    height: 100px;
+}
+
+
+
 /* Generics  */
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    background-color: bisque;
+    position: sticky;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px var(--berder-color);
+}
+
+nav{
+    background-color: aqua;
+    display: flex;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* Utils  */
 .container-sm{
-
+    width: 900px;
 }
 
 .container-big{
-    
+    width: 600px;
+}
+
+.border{
+    border: 1px dashed black;
+}
+
+/* header  */
+.logo{
+    width: 20%;
+    margin-right: 10px;
+
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header-list ul{
+    display: flex;
 }
