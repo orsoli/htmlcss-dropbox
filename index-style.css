@@ -14,6 +14,19 @@
     --btn-blue-bg: #0861FF;
     --footer-bg: black;
 
+     /* brands bg-colors  */
+     --designit: #A2D39B ;
+     --big-designit: #F5F5F5;
+     --asu: #61082B;
+     --wbr: #D50020;
+     --hearst: #B4D0E7;
+     --uf-florida: #0693CE;
+     --topps: #FF1C1C;
+     --lonly-planet: #0D2481;
+     --clear-channel: #FFD830;
+
+
+
     /* gap  */
     --gap-md: 30px;
 
@@ -210,3 +223,63 @@ section.dropbox-team h1{
     margin: 50px 0;
     
 }
+
+  /* brands section  */
+section.brands .row{
+    gap: 0;
+}
+
+section.brands .col{
+    flex-wrap: wrap;
+    flex-basis: calc(100%/3);
+}
+
+.sm-card{
+    flex-basis: calc(100%/2);
+    height: calc(100vw/6);
+}
+
+.big-card{
+    flex-basis: 100%;
+    height: calc(100vw/3);
+
+}
+
+   /* brends bg colors  */
+.designit.sm-card{
+background-color: var(--designit);
+}
+
+.asu.sm-card{
+background-color: var(--asu);
+}
+
+.uf-florida.sm-card{
+background-color: var(--uf-florida);
+}
+
+.topps.sm-card{
+background-color: var(--topps);   
+}
+
+.wbr.sm-card{
+background-color: var(--wbr);
+}
+
+.hearst.sm-card{
+background-color: var(--hearst);
+}
+
+.lonly-planet.sm-card{
+background-color: var(--lonly-planet);
+}
+
+.clear-channel.sm-card{
+background-color: var(--clear-channel);
+}
+
+.designit.big-card{
+background-color: var(--big-designit);
+}
+
+
