@@ -13,16 +13,40 @@
     --berder-color: #D0D0D3;
     --btn-blue-bg: #0861FF;
     --footer-bg: black;
+
+    /* delet  */
+    --height: 500px;
+
 }
 
 /* delete */
-.height{
-    height: 400px;
-}
-
 .header-h{
     height: 100px;
 }
+
+section *{
+    background-color: aquamarine;
+}
+
+.jumbo h1{
+    height: 100px;
+}
+
+.jumbo .p1{
+    height: 100px;
+}
+.jumbo .p2{
+    height: 50px;
+}
+
+.jumbo a{
+    line-height: 50px;
+}
+
+.jumbo i{
+    padding-top: 20px;
+}
+
 
 
 
@@ -38,10 +62,20 @@ header{
     box-shadow: 0 0 2px var(--berder-color);
 }
 
+section{
+    background-color: var(--secondary-bg);
+}
+
 nav{
     background-color: aqua;
     display: flex;
     height: 100%;
+}
+
+a{
+    color: var(--txt-color);
+    text-decoration: none;
+    font-size: 14px;
 }
 
 ul{
@@ -51,10 +85,12 @@ ul{
 /* Utils  */
 .container-sm{
     width: 900px;
+    margin: auto;
 }
 
 .container-big{
     width: 600px;
+    margin: auto;
 }
 
 .border{
@@ -76,4 +112,23 @@ ul{
 
 .header-list ul{
     display: flex;
+}
+
+/* main  */
+.jumbo{
+    background-color: var(--primary-bg);
+}
+
+
+
+/* jumbo section  */
+#jumbo{
+    width: 400px;
+    height: 300px;
+    float: right;
+}
+
+.jumbo h1{
+    text-align: center;
+    padding: 50px 0;
 }
