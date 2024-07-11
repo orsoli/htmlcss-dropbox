@@ -70,6 +70,8 @@ body{
 header{
     background-color: bisque;
     position: sticky;
+    top: 0;
+    right: 0;
     padding: 10px 20px;
     box-shadow: 0 0 2px var(--berder-color);
 }
@@ -96,6 +98,10 @@ ul{
 }
 
 /* Utils  */
+.full-page{
+    height: 100vh;
+}
+
 .container-sm{
     width: 700px;
     margin: auto;
@@ -113,6 +119,7 @@ ul{
 .border{
     border: 1px dashed black;
 }
+
 
 /* header  */
 .logo{
@@ -135,9 +142,7 @@ ul{
     background-color: var(--primary-bg);
 }
 
-
-
-/* jumbo section  */
+  /* -jumbo section  */
 #jumbo{
     width: 400px;
     height: 300px;
@@ -148,13 +153,9 @@ ul{
     padding: 50px 0;
 }
 
-/* payments section  */
+  /* -payments section  */
 .payments{
     clear: right;
-}
-
-.payments h1{
-    padding: 20px 0;
 }
 
 .row{
@@ -174,3 +175,9 @@ ul{
 .card{
     width: 100%;
 }
+
+  /* -partner section  */
+  #partner-img{
+    width: 300px;
+    height: 300px;
+  }
