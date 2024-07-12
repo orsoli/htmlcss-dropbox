@@ -30,37 +30,9 @@
     /* gap  */
     --gap-md: 30px;
 
-    /* delet  */
-    --height: 500px;
-
 }
 
 /* delete */
-
-    
-section img{
-    background-color: aquamarine;
-
-}
-
-.jumbo h1{
-    height: 100px;
-}
-
-.jumbo .p1{
-    height: 100px;
-}
-.jumbo .p2{
-    height: 50px;
-}
-
-.jumbo a{
-    line-height: 50px;
-}
-
-.jumbo i{
-    padding-top: 20px;
-}
 
 .faturate{
     height: 50px;
@@ -97,8 +69,7 @@ a{
     color: var(--txt-color);
     text-decoration: none;
     font-size: 14px;
-    display: block;
-    padding: 3px 10px;
+    padding: 5px 10px;
 }
 
 ul{
@@ -121,7 +92,7 @@ footer{
 }
 
 .container-big{
-    width: 900px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -129,9 +100,28 @@ footer{
     display: flex;
 }
 
+.row{
+    flex-basis: 100%;
+    flex-wrap: wrap ;
+    gap: var(--gap-md);
+}
+
+.col{
+    flex-basis: calc(100%/3 - 60px/3);
+}
+
+.col-30{
+    flex-basis: 30%;
+}
+
+.col-70{
+    flex-basis: 70%;
+}
+
 .blue-btn{
     color: white;
     background-color: var(--btn-blue-bg);
+    box-shadow: 0 0 1px black;
 }
 
 .border{
@@ -147,6 +137,10 @@ footer{
     right: 0;
     padding: 20px 20px;
     box-shadow: 0 0 10px var(--berder-color);
+}
+
+#main-header a{
+    display: block;
 }
 
 .logo{
@@ -166,25 +160,34 @@ footer{
     display: flex;
 }
 
-.header-list li{
-    /* margin-left: 20px;    */
-}
-
-
 /* main  */
 .jumbo{
     background-color: var(--primary-bg);
+    padding: 20px 0;
 }
 
   /* -jumbo section  */
+
+
+.jumbo h1{
+      font-size: 70px;
+      padding: 40px 0;
+  }
+
 #jumbo{
-    width: 400px;
-    height: 300px;
+    max-width: 70%;
     float: right;
 }
 
-.jumbo h1{
-    padding: 50px 0;
+section.jumbo .row{
+    gap: 0;
+}
+
+section.jumbo .jumbo-txt{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-md);
+    margin-bottom: 70px;
 }
 
   /* -payments section  */
@@ -192,15 +195,6 @@ footer{
     clear: right;
 }
 
-.row{
-    flex-basis: 100%;
-    flex-wrap: wrap ;
-    gap: var(--gap-md);
-}
-
-.col{
-    flex-basis: calc(100%/3 - 60px/3);
-}
 
 .utenti{
     justify-content: center;
