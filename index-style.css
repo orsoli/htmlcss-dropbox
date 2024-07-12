@@ -10,7 +10,7 @@
     --primary-bg: #B4D0E6;
     --secondary-bg :white;
     --txt-color: black;
-    --berder-color: #D0D0D3;
+    --border-color: #D0D0D3;
     --btn-blue-bg: #0861FF;
     --footer-bg: #000000;
 
@@ -76,6 +76,10 @@ ul{
     list-style-type: none;
 }
 
+span{
+    font-size: 14px;
+}
+
 footer{
     color: white;
     background-color: var(--footer-bg);
@@ -87,7 +91,7 @@ footer{
 }
 
 .container-sm{
-    width: 700px;
+    width: 900px;
     margin: auto;
 }
 
@@ -126,6 +130,10 @@ footer{
 
 .border{
     border: 1px dashed black;
+}
+
+.border-btm{
+    border-bottom: 2px solid var(--border-color);
 }
 
 
@@ -193,13 +201,33 @@ section.jumbo .jumbo-txt{
   /* -payments section  */
 .payments{
     clear: right;
+    padding: 10px;
 }
 
+.payments .plans-title{
+    font-size: 37px;
+    margin: 40px 0;
+}
 
-.utenti{
+.faturate>span{
+    margin-right: 20px;
+}
+
+i.fa-circle-dot{
+    color: #0861FF;
+}
+
+.plan{
     justify-content: center;
-    border-bottom: 1px solid black
+    padding: 10px 0;
 }
+
+.plan.user::before{
+    content: '';
+    padding: 0 5px;
+    
+}
+
 .card{
     width: 100%;
 }
