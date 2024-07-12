@@ -12,7 +12,7 @@
     --txt-color: black;
     --berder-color: #D0D0D3;
     --btn-blue-bg: #0861FF;
-    --footer-bg: black;
+    --footer-bg: #000000;
 
      /* brands bg-colors  */
      --designit: #A2D39B ;
@@ -298,6 +298,16 @@ background-color: var(--big-designit);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+  /* faq section  */
+.faq .title>h1{
+    padding: 30px 0;
+
+}
+
+.faq .question>h3{
+    padding:20px 0;
 }
 
 
