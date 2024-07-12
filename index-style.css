@@ -246,6 +246,10 @@ section.brands .col{
 }
 
    /* brends bg colors  */
+.brands{
+    margin-bottom: 0;
+}
+
 .designit.sm-card{
 background-color: var(--designit);
 }
@@ -280,6 +284,20 @@ background-color: var(--clear-channel);
 
 .designit.big-card{
 background-color: var(--big-designit);
+}
+
+  /* dropbox-gate section  */
+.dropbox-gate{
+    background-color: var(--primary-bg);
+    display: flex;
+
+    height: 300px;
+}
+
+.bussines-gate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
