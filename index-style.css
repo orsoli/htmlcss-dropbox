@@ -138,6 +138,7 @@ footer{
     position: sticky;
     top: 0;
     right: 0;
+    z-index: 1;
     padding: 10px 20px;
     box-shadow: 0 0 10px var(--border-color);
 }
@@ -298,11 +299,15 @@ section.dropbox-team h1{
 }
 
   /* brands section  */
-section.brands .row{
+section.brands-box{
+      margin-bottom: 0;
+}
+
+section.brands-box .row{
     gap: 0;
 }
 
-section.brands .col{
+section.brands-box .col{
     flex-wrap: wrap;
     flex-basis: calc(100%/3);
 }
@@ -310,18 +315,39 @@ section.brands .col{
 .sm-card{
     flex-basis: calc(100%/2);
     height: calc(100vw/6);
+    position: relative;
+}
+
+.brand{
+    max-width: 60%;
+}
+
+.sm-card>img.brand{
+    filter:invert(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .big-card{
     flex-basis: 100%;
     height: calc(100vw/3);
+    padding: 30px;
 
 }
+
+.big-card>.border{
+    margin: 30px 0;
+    max-width: 20%;
+}
+
+p.author{
+    margin-top: 30px;
+}
+
 
    /* brends bg colors  */
-.brands{
-    margin-bottom: 0;
-}
 
 .designit.sm-card{
 background-color: var(--designit);
