@@ -12,6 +12,7 @@
     --txt-color: black;
     --border-color: #D0D0D3;
     --btn-blue-bg: #0861FF;
+    --btn-white-bg: #ffffff;
     --footer-bg: #000000;
 
      /* brands bg-colors  */
@@ -121,6 +122,10 @@ footer{
     color: white;
     background-color: var(--btn-blue-bg);
     box-shadow: 0 0 1px black;
+}
+
+.white-btn{
+    background-color: var(--btn-white-bg);
 }
 
 .border{
@@ -290,6 +295,7 @@ i.fa-circle-dot{
 section.dropbox-team a{
     color: #1718EF;
     text-decoration: underline;
+    padding-left: 0;
     
 }
 
@@ -389,13 +395,12 @@ background-color: var(--big-designit);
 .dropbox-gate{
     background-color: var(--primary-bg);
     display: flex;
-
     height: 300px;
 }
 
 .bussines-gate{
+    color: #61082B;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
