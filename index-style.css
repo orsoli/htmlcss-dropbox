@@ -265,6 +265,10 @@ section.payments .plan-list>h5{
 section.payments .plan-info.office{
     flex-direction: row;
     justify-content: space-between;
+    
+}
+section.payments .office>.plan-section{
+    max-width: 70%;
 }
 
 section.payments li::before{
