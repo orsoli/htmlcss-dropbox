@@ -26,8 +26,6 @@
      --lonly-planet: #0D2481;
      --clear-channel: #FFD830;
 
-
-
     /* gap  */
     --gap-md: 30px;
 
@@ -55,6 +53,7 @@ nav{
 a{
     color: var(--txt-color);
     text-decoration: none;
+    text-align: center;
     font-size: 12px;
     padding: 5px 10px;
 }
@@ -78,7 +77,7 @@ footer{
 }
 
 .container-sm{
-    width: 700px;
+    width: 800px;
     margin: auto;
 }
 
@@ -99,6 +98,11 @@ footer{
 
 .col{
     flex-basis: calc(100%/3 - 60px/3);
+    flex-grow: 1;
+}
+
+.card{
+    width: 100%;
 }
 
 .col-30{
@@ -199,69 +203,110 @@ section.jumbo .jumbo-txt{
 }
 
   /* -payments section  */
-.payments{
+section.payments{
     clear: right;
     padding: 10px;
 }
 
-.payments .plans-title{
+section.payments .plans-title{
     font-size: 37px;
     margin: 40px 0;
 }
 
-.faturate>span{
+section.payments .faturate{
+    margin: 20px 0;
+}
+
+section.payments .faturate>span{
     margin-right: 20px;
 }
 
-.plan{
+section.payments .plan{
+    align-items: baseline;
     justify-content: center;
     padding: 10px 0;
 }
 
-.plan-info{
+section.payments .plan-info{
     flex-direction: column;
     padding: 10px 20px;
     gap: var(--gap-md);
 }
 
-.user::before{
-    content: '\f007';
+section.payments .plan-section{
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.payments li{
+    display: flex;
+    align-items: baseline;
+    font-size: 12px;
+    gap: 5px;
+}
+section.payments li>p{
+    margin: 5px 0;
+}
+
+section.payments .plan-section :last-of-type a{
+    text-decoration: underline;
+    color: #0861FF;
+    padding-left: 2px;
+}
+
+section.payments .plan-section>.border{
+    width: 20%;
+}
+
+section.payments .plan-list>h5{
+    margin-bottom: 10px;
+}
+
+section.payments .plan-info.office{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.payments li::before{
     font-family: 'Font Awesome 5 Free';
     font-weight: bold;
-    padding: 0 5px;  
+    padding-right: 3px;
+    margin-left: -5px;
+}
+
+section.payments .plan::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 5px; 
+}
+
+.user::before{
+    content: '\f007';
 }
 
 .team::before{
     content: '\f0c0';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: bold;
-    padding: 0 5px;
 }
 
 .company::before{
     content: '\f1ad';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: bold;
-    padding: 0 5px;
 }
 
 .archive::before{
     content: '\f07b';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: bold;
-    padding: 0 5px;
 }
 
 .share::before{
     content: '\f1e0';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: bold;
-    padding: 0 5px;
 }
 
-.card{
-    width: 100%;
+ul.check li::before{
+    content: '\f00c';
+    color: #0861FF;
 }
+
+
 
   /* -partner section  */
 .partner .row{
@@ -311,15 +356,15 @@ section.dropbox-team h1{
 }
 
   /* brands section  */
-section.brands-box{
+.brands-box{
       margin-bottom: 0;
 }
 
-section.brands-box .row{
+.brands-box .row{
     gap: 0;
 }
 
-section.brands-box .col{
+.brands-box .col{
     flex-wrap: wrap;
     flex-basis: calc(100%/3);
 }
