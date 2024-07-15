@@ -13,6 +13,7 @@
     --border-color: #D0D0D3;
     --btn-blue-bg: #0861FF;
     --btn-white-bg: #ffffff;
+    --btn-hover-gb: #7eadfe;
     --footer-bg: #000000;
 
      /* brands bg-colors  */
@@ -117,6 +118,10 @@ footer{
     color: white;
     background-color: var(--btn-blue-bg);
     box-shadow: 0 0 1px black;
+}
+
+.blue-btn:hover, .white-btn:hover{
+    background-color: var(--btn-hover-gb);
 }
 
 .white-btn{
@@ -374,9 +379,14 @@ section.dropbox-team h1{
 }
 
 .sm-card{
+    border: 10px solid transparent;
     flex-basis: calc(100%/2);
     height: calc(100vw/6);
     position: relative;
+}
+
+.sm-card:hover, .big-card:hover{
+    border: 10px solid rgba(225, 225, 225, 0.683);
 }
 
 .brand{
@@ -392,6 +402,7 @@ section.dropbox-team h1{
 }
 
 .big-card{
+    border: 10px solid transparent;
     flex-basis: 100%;
     height: calc(100vw/3);
     padding: 30px;
@@ -464,6 +475,10 @@ background-color: var(--big-designit);
     padding: 30px 0;
 }
 
+.answer-questions{
+    flex-direction: column;
+}
+
 .faq .question{
     justify-content: space-between;
     align-items: center;
@@ -481,6 +496,24 @@ background-color: var(--big-designit);
 .faq .answer{
     display: none;
 }
+
+section.faq .answer-questions:hover{
+    cursor: pointer;
+}
+
+section.faq .question:hover .fa-chevron-down{
+    display: none;
+}
+
+section.faq .question:hover .fa-chevron-up{
+    display: block;
+}
+section.faq .answer-questions:hover .answer{
+    display: block;
+}
+
+
+
 
 /* footer  */
 footer a{
