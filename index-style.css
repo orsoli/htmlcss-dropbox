@@ -16,28 +16,28 @@
     --btn-hover-gb: #7eadfe;
     --footer-bg: #000000;
 
-     /* brands bg-colors  */
-     --designit: #A2D39B ;
-     --big-designit: #F5F5F5;
-     --asu: #61082B;
-     --wbr: #D50020;
-     --hearst: #B4D0E7;
-     --uf-florida: #0693CE;
-     --topps: #FF1C1C;
-     --lonly-planet: #0D2481;
-     --clear-channel: #FFD830;
+    /* brands bg-colors  */
+    --designit: #A2D39B ;
+    --big-designit: #F5F5F5;
+    --asu: #61082B;
+    --wbr: #D50020;
+    --hearst: #B4D0E7;
+    --uf-florida: #0693CE;
+    --topps: #FF1C1C;
+    --lonly-planet: #0D2481;
+    --clear-channel: #FFD830;
 
-     /* padding dimensions  */
-     --padding-sm: 10px;
-     --padding-md: 20px;
-     --padding-lg: 30px;
-     --padding-xlg: 40px;
+    /* padding dimensions  */
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 30px;
+    --padding-xlg: 40px;
 
-     /* margging dimensions  */
-     --marg-sm: 10px;
-     --marg-md: 20px;
-     --marg-lg: 30px;
-     --marg-xlg: 40px;
+    /* margging dimensions  */
+    --marg-sm: 10px;
+    --marg-md: 20px;
+    --marg-lg: 30px;
+    --marg-xlg: 40px;
      
 
     /* gap dimwnsions */
@@ -200,8 +200,6 @@ i.fa-chevron-down, i.fa-chevron-up{
 }
 
   /* -jumbo section  */
-
-
 .jumbo h1{
       font-size: 56px;
       padding: var(--padding-xlg) 0;
@@ -221,6 +219,20 @@ section.jumbo .jumbo-txt{
     flex-direction: column;
     gap: var(--gap-lg);
     margin-bottom: 70px;
+}
+
+.fa-arrow-down{
+    animation: go-down 2s infinite;
+}
+@keyframes go-down{
+    from{
+        top: 0;
+        color: black;
+    }
+    to{
+        translate: 0 20px;
+        color: rgb(42, 103, 215);
+    }
 }
 
   /* -payments section  */
@@ -527,9 +539,6 @@ section.faq .question:hover .fa-chevron-up{
 section.faq .answer-questions:hover .answer{
     display: block;
 }
-
-
-
 
 /* footer  */
 footer a{
